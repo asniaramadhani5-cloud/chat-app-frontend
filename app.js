@@ -1,4 +1,4 @@
-const API = "https://hear-gst-toolbox-extra.trycloudflare.com";
+const API = "https://2ffca625e70a6759-114-10-132-116.serveousercontent.com"
 let token = localStorage.getItem("token");
 let currentUser = localStorage.getItem("username");
 let currentRole = localStorage.getItem("role");
@@ -104,7 +104,7 @@ function logout() {
 // WEBSOCKET
 // ─────────────────────────────────────
 function connectWebSocket() {
-    ws = new WebSocket(`wss://zone-holland-bite-ensuring.trycloudflare.com/ws/${token}`);
+    ws = new WebSocket(`wss://2ffca625e70a6759-114-10-132-116.serveousercontent.com/ws/${token}`);
 
     ws.onmessage = function (event) {
         const data = JSON.parse(event.data);
