@@ -1,4 +1,4 @@
-const API = "https://2ffca625e70a6759-114-10-132-116.serveousercontent.com"
+const API = "https://aa2e90c6fb5832.lhr.life"
 let token = localStorage.getItem("token");
 let currentUser = localStorage.getItem("username");
 let currentRole = localStorage.getItem("role");
@@ -104,7 +104,7 @@ function logout() {
 // WEBSOCKET
 // ─────────────────────────────────────
 function connectWebSocket() {
-    ws = new WebSocket(`wss://2ffca625e70a6759-114-10-132-116.serveousercontent.com/ws/${token}`);
+    ws = new WebSocket(`wss://aa2e90c6fb5832.lhr.life/ws/${token}`);
 
     ws.onmessage = function (event) {
         const data = JSON.parse(event.data);
