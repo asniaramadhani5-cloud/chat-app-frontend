@@ -104,7 +104,7 @@ function logout() {
 // WEBSOCKET
 // ─────────────────────────────────────
 function connectWebSocket() {
-    ws = new WebSocket(`ws://127.0.0.1:8000/ws/${token}`);
+    ws = new WebSocket(`wss://zone-holland-bite-ensuring.trycloudflare.com/ws/${token}`);
 
     ws.onmessage = function (event) {
         const data = JSON.parse(event.data);
