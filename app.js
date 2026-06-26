@@ -1,4 +1,4 @@
-const API = "https://test.trycloudflare.com";
+const API = "https://zone-holland-bite-ensuring.trycloudflare.com";
 let token = localStorage.getItem("token");
 let currentUser = localStorage.getItem("username");
 let currentRole = localStorage.getItem("role");
