@@ -1,4 +1,4 @@
-const API = "https://aa2e90c6fb5832.lhr.life"
+const API = "https://53351ea1-125f-4d24-9462-a5d8b606901c-00-85i50bxyune1.sisko.replit.dev"
 let token = localStorage.getItem("token");
 let currentUser = localStorage.getItem("username");
 let currentRole = localStorage.getItem("role");
@@ -104,7 +104,7 @@ function logout() {
 // WEBSOCKET
 // ─────────────────────────────────────
 function connectWebSocket() {
-    ws = new WebSocket(`wss://aa2e90c6fb5832.lhr.life/ws/${token}`);
+    ws = new WebSocket(`wss://53351ea1-125f-4d24-9462-a5d8b606901c-00-85i50bxyune1.sisko.replit.dev/ws/${token}`);
 
     ws.onmessage = function (event) {
         const data = JSON.parse(event.data);
